@@ -5,7 +5,7 @@ _revision May 3rd 2024_
 
 ## Description
 
-This repo contains a guide on solving 4 DIMM DRAM problems on X370 / X470 / B350 / B450 / etc.. AM4 motherboards from Gigabyte. This solved my issue of crashing while using 4 DIMMs on a Ryzen 5700x processor and Ryzen 3600.
+This repo contains a guide on solving 4 DIMM DRAM problems on X370 / X470 / B350 / B450 / etc.. AM4 motherboards from Gigabyte. This solved my issue of crashing while using 4 DIMMs on a Ryzen 5000 series processor and Ryzen 3000 series.
 
 ## Prequisite
 
