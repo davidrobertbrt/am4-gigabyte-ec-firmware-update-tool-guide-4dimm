@@ -1,4 +1,4 @@
-_revision May 3rd 2024_
+_revision May 18 2024_
 # DISCLAIMER
 
 **I am not responsible for bricked motherboard, dead CPU / RAM, loss of data. If you are unsure about anything in this guide and don't want to risk, please contact GIGABYTE SUPPORT about the process of updating EC Firmware Tool of your specific motherboard or any other issue you may have. Please ALWAYS BACKUP YOUR DATA BEFORE DOING ANY TYPE OF UPDATE ON MOTHERBOARD FIRMWARE / BIOS.**
@@ -21,8 +21,6 @@ This repo contains a guide on solving 4 DIMM DRAM problems on X370 / X470 / B350
 ## Instructions
 
 1. Download from official Gigabyte website EC Firmware Update Tool from the section Utility from the download page of your motherboard. If you can't find it or it has been deleted, you can download the `ECFwUpdateB19.0624.1.zip` from this repository.
-
-_The `mb_utility_ecfwupdate_B19.0606.1.zip` is for X370 Gaming K7 motherboard only!_
 
 2. Extract the files on your main OS drive. (root of the partition)
 
@@ -62,3 +60,25 @@ E.g. `FW VERSION SHOW=0` to `FW VERSION SHOW=1`
 Running the tool will show on the main page which verison you are running as shown in the picture below.
 
 ![Check version with FW VERSION SHOW](https://i.imgur.com/0wwenyt.png)
+
+### Update on README.md (18 May 2024)
+After checking using md5sum in Linux, the files from every motherboard Gigabyte on AM4 it seems that the .bin files are the same. Use the latest .zip file if you want. Confirmed to be working on X370 Gaming K7
+
+gigabyte_ecfwupdate1 (folder) = .bin files from ECFwUpdateB19.0624.1.zip
+gigabyte_ecfwupdate2 (folder) = .bin files from mb_utility_ecfwupdate_B19.0606.1.zip
+
+```sh
+< 0686d951fa9379ef7d7b8cb3a2bb1187  gigabyte_ecfwupdate1/V632.bin
+< 5af4a1ac3708c9479f2e13e6dd89175c  gigabyte_ecfwupdate1/V684.bin
+< 69b3cafd3db7d0bc161e19cb8e340dd4  gigabyte_ecfwupdate1/V623.bin
+< 8571c4c2982a4992b7e549d2af0f41be  gigabyte_ecfwupdate1/V679.bin
+< c6d5b539657f3d9204ea1f569d997f53  gigabyte_ecfwupdate1/V817.bin
+< cdc73c72506de5ce061380a0302d5e14  gigabyte_ecfwupdate1/V615.bin
+---
+> 0686d951fa9379ef7d7b8cb3a2bb1187  gigabyte_ecfwupdate2/V632.bin
+> 5af4a1ac3708c9479f2e13e6dd89175c  gigabyte_ecfwupdate2/V684.bin
+> 69b3cafd3db7d0bc161e19cb8e340dd4  gigabyte_ecfwupdate2/V623.bin
+> 8571c4c2982a4992b7e549d2af0f41be  gigabyte_ecfwupdate2/V679.bin
+> c6d5b539657f3d9204ea1f569d997f53  gigabyte_ecfwupdate2/V817.bin
+> cdc73c72506de5ce061380a0302d5e14  gigabyte_ecfwupdate2/V615.bin
+```
